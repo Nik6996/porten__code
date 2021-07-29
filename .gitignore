@@ -1,0 +1,7 @@
+node_modules
+gulpfile.js
+.vscode
+package-lock.json
+package.json
+style.min.css
+script.min.js
