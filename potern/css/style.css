@@ -1,7 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=PT+Sans:regular,italic,700,700italic");
 
-@import url("http://fonts.cdnfonts.com/css/post-no-bills-jaffna");
-
 @import url("https://fonts.googleapis.com/css?family=Playfair+Display:regular,500,600,700,800,900,italic,500italic,600italic,700italic,800italic,900italic");
 
 * {
@@ -289,6 +287,7 @@ section {
 }
 
 .title__content {
+  min-height: 810px;
   padding-bottom: 8%;
   overflow: hidden;
   position: relative;
@@ -453,7 +452,7 @@ section {
   z-index: 1;
   font-family: Playfair Display;
   font-weight: bold;
-  font-size: calc(16px + 20 * (100vw / 1920));
+  font-size: calc(22px + 14 * (100vw / 1920));
   line-height: 48px;
   text-transform: uppercase;
   color: #FFFFFF;
@@ -602,7 +601,7 @@ section {
 
 .contant-bottom__title {
   font-family: Playfair Display;
-  font-size: calc(16px + 20 * (100vw / 1920));
+  font-size: calc(22px + 14 * (100vw / 1920));
   line-height: 48px;
   text-align: center;
   text-transform: uppercase;
@@ -649,8 +648,32 @@ section {
   padding-bottom: 140px;
 }
 
+.list-product__btn {
+  width: 200px;
+  height: 100px;
+  background-color: lawngreen;
+}
+
 .list-product .container {
-  max-width: 1100px;
+  max-width: 1200px;
+}
+
+.list-product__slider {
+  overflow: hidden;
+}
+
+.list-product__slider-line {
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .list-product__title {
@@ -658,7 +681,7 @@ section {
   text-align: center;
   font-family: Playfair Display;
   font-weight: bold;
-  font-size: calc(16px + 20 * (100vw / 1920));
+  font-size: calc(22px + 14 * (100vw / 1920));
   line-height: 48px;
   color: #FFFFFF;
 }
@@ -723,7 +746,7 @@ section {
 .footer__title {
   margin-bottom: 40px;
   font-family: Playfair Display;
-  font-size: calc(10px + 14 * (100vw / 1920));
+  font-size: calc(19px + 5 * (100vw / 1920));
   line-height: 32px;
   text-transform: uppercase;
   color: #FFFFFF;
@@ -731,7 +754,7 @@ section {
 
 .footer__text {
   font-family: PT Sans;
-  font-size: calc(8px + 6 * (100vw / 1920));
+  font-size: calc(10px + 4 * (100vw / 1920));
   color: #FFFFFF;
 }
 
@@ -1044,14 +1067,22 @@ section {
   }
 
   .title__title {
-    height: 220px;
-    width: 220px;
+    height: 250px;
+    width: 250px;
+    position: relative;
+    top: -100px;
   }
 
   .title__text {
     margin-top: 40px;
     font-size: 13px;
     line-height: 110%;
+    position: relative;
+    top: -50px;
+  }
+
+  .title__img img {
+    max-height: 100%;
   }
 
   .contant-bottom__body {
@@ -1076,9 +1107,22 @@ section {
     padding-bottom: 40px;
   }
 
+  .list-product__slider-line {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+
   .list-product__title span {
     margin-top: 20px;
     margin-bottom: 40px;
+  }
+
+  .brands {
+    padding-top: 30px;
+    padding-bottom: 44px;
   }
 }
 
